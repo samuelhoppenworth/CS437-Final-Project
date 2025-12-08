@@ -1,2 +1,7 @@
-water_level_sensor:water_level_sensor.o
-	gcc water_level_sensor.c -o water_level_sensor -lwiringPi
+BUILD_DIR := build
+
+$(BUILD_DIR)/water_level_sensor: water_level_sensor.c | $(BUILD_DIR)
+	gcc $< -o $@ -lwiringPi
+
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
