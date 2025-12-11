@@ -21,8 +21,8 @@ const int LIGHT_GOOD = 10000;    // Above this = good sunlight
 // 0-1000 = Low, 1000-10000 = Moderate, 10000+ = Good sunlight
 
 // ========== WIFI SETTINGS ==========
-const char* ssid = "DeanUnit414";      // Change to match your iPhone name exactly
-const char* password = "AF7AQG6P";   // Your hotspot password
+const char* ssid = "";      // Change to match your iPhone name exactly
+const char* password = "";   // Your hotspot password
 
 // ========== PIN SETTINGS ==========
 const int relayPin = 18;       // GPIO18 for relay (digital output - works fine)
